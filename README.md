@@ -1,4 +1,4 @@
 ## 码匠社区
 ## 资料
-http://elasticsearch.cn/exploregit
+http://elasticsearch.cn/explore
 ## 工具

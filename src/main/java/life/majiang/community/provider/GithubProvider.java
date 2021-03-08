@@ -12,6 +12,7 @@ import java.io.IOException;
 public class GithubProvider {
 
     public String getAccessToken(AccessTokenDTO accessTokenDTO) {
+        //利用okHttp向github发送get请求
         MediaType mediaType
                 = MediaType.get("application/json; charset=utf-8");
 
@@ -34,6 +35,7 @@ public class GithubProvider {
     }
 
     public GithubUser getUser(String accessToken) {
+        //向github发送post请求
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .url("https://api.github.com/user")
